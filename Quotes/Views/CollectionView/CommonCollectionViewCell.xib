@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlayfairDisplay-Italic-VariableFont_wght.ttf">
+            <string>PlayfairDisplay-Italic</string>
+        </array>
+        <array key="PlayfairDisplay-Medium.ttf">
+            <string>PlayfairDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommonCollectionViewCell" id="gTV-IL-0wX" customClass="CommonCollectionViewCell" customModule="Quotes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ef-pQ-zYx" customClass="RCustomView" customModule="Quotes" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="60" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXZ-ak-whc">
+                                <rect key="frame" x="20.5" y="18.5" width="19" height="23"/>
+                                <fontDescription key="fontDescription" name="PlayfairDisplay-Italic" family="Playfair Display" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="7Pl-0Y-E4h"/>
+                            <constraint firstItem="CXZ-ak-whc" firstAttribute="centerY" secondItem="0Ef-pQ-zYx" secondAttribute="centerY" id="FHf-2T-Veh"/>
+                            <constraint firstItem="CXZ-ak-whc" firstAttribute="centerX" secondItem="0Ef-pQ-zYx" secondAttribute="centerX" id="dOH-9F-9La"/>
+                            <constraint firstAttribute="width" constant="60" id="m6N-WZ-Dso"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="2" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrD-bY-RCE">
+                        <rect key="frame" x="2" y="76" width="88" height="21"/>
+                        <fontDescription key="fontDescription" name="PlayfairDisplay-Medium" family="Playfair Display" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0Ef-pQ-zYx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0gk-ug-THa"/>
+                <constraint firstAttribute="bottom" secondItem="YrD-bY-RCE" secondAttribute="bottom" constant="4" id="0hd-zp-qQ3"/>
+                <constraint firstItem="YrD-bY-RCE" firstAttribute="top" secondItem="0Ef-pQ-zYx" secondAttribute="bottom" constant="8" id="Ifx-CL-4F1"/>
+                <constraint firstItem="YrD-bY-RCE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="PEG-uf-ScH"/>
+                <constraint firstAttribute="trailing" secondItem="YrD-bY-RCE" secondAttribute="trailing" constant="2" id="h3a-qh-ZZi"/>
+                <constraint firstItem="0Ef-pQ-zYx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ms9-RZ-jDz"/>
+            </constraints>
+            <size key="customSize" width="92" height="101"/>
+            <connections>
+                <outlet property="bgView" destination="0Ef-pQ-zYx" id="uPE-YJ-Q7m"/>
+                <outlet property="fontTextLbl" destination="CXZ-ak-whc" id="PBe-sm-cD5"/>
+                <outlet property="titleFontLbl" destination="YrD-bY-RCE" id="LZS-VR-35A"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="59.933035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
