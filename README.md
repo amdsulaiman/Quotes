@@ -1,5 +1,5 @@
 # Quotes
-A Quotes App
+Quotes App is quotes browsing app which is built with <a href="https://github.com/lukePeavey/quotable">Quotable Free API</a> completely in UIKit.
 
 <p align="row">
 <img src="https://user-images.githubusercontent.com/73575643/151652890-f0bd24b6-b7c3-41c1-9a6a-47bb6a7aee11.PNG" width="400" >
